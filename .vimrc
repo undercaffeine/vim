@@ -3,11 +3,29 @@
 
 
 " ------------------------------------------------------------------------------ 
+" PLUGGINS:
+
+filetype off 
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"vlime
+Plugin 'l04m33/vlime', {'rtp': 'vim/'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+" ------------------------------------------------------------------------------ 
 " BASIC STUFF:
 
 set nocompatible                " VI old stuff not enabled
 syntax enable                   " enable syntax
 filetype plugin on              " enable built-in pluggin
+
 
 " searches
 set hlsearch                    " highlight search terms
@@ -108,5 +126,3 @@ nmap <silent> ,/ :nohlsearch<CR>
 " understand this line and you will have super powers in vim
 " <CR> means ENTER
 
-" ------------------------------------------------------------------------------ 
-" PLUGGINS:
