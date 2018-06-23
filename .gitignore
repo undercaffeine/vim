@@ -1,0 +1,6 @@
+# ignore everything
+*
+
+# expect
+!.vimrc
+!.gitignore
